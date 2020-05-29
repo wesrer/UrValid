@@ -5,7 +5,6 @@
 # include <ctype.h>
 # include <string.h>
 
-/* # include <unity.h> */
 # include "../src/urvalid.h"
 
 struct test_metrics {
@@ -94,7 +93,6 @@ void test_urls_that_should_pass(struct test_metrics *m) {
 
 void test_urls_that_should_not_pass(struct test_metrics *m) {
     check_url_status_from_file_lines("should_not_pass.txt", false, m);
-    /* dummy("should_not_pass.txt", false); */
 }
 
 int main(void) {
